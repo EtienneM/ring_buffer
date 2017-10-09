@@ -13,9 +13,10 @@ class RingBuffer < Array
   end
 
   def <<(element)
-    super if self.size < @max_size
+    return super(element) if size < @max_size
 
-    self.shift
-    self.push element
+    # If the RingBuffer is full, remove the first element and add the new at the end.
+    shift
+    push element
   end
 end
