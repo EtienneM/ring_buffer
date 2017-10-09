@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ring_buffer (0.1.0)
+    ring_buffer (1.0.0)
 
 GEM
   remote: https://rubygems.org/
