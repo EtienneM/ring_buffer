@@ -38,7 +38,7 @@ RSpec.describe RingBuffer do
         buffer << 'biniou-10'
         expect(buffer.size).to eq 10
         (0..9).each do |i|
-          expect(buffer[i]).to eq "biniou-#{i+1}"
+          expect(buffer[i]).to eq "biniou-#{i + 1}"
         end
       end
     end
